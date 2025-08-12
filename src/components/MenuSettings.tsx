@@ -172,14 +172,6 @@ export const MenuSettings: React.FC<MenuSettingsProps> = ({ menuData, onSave, on
                                     onChange={(_, data) => updateTopNavItem(safeTopNavIndex, 'label', data?.value || '')}
                                 />
                             </FormField>
-
-                            <FormField label="URL (optional):">
-                                <Input
-                                    value={selectedTopNav.url || ''}
-                                    placeholder="https://example.com"
-                                    onChange={(_, data) => updateTopNavItem(safeTopNavIndex, 'url', data?.value || '')}
-                                />
-                            </FormField>
                         </div>
                     )}
 
